@@ -1,5 +1,4 @@
 ; move the probe to the center of the bed
 ;
-G90			; absolute positioning
-G1 X200 Y140 		; move to bed center
-G91			; relative positioning
+M291 P"Moving probe to bed center" T5
+M98 P"0:/macros/Calibration/Bed Leveling/1_Center Probe on Bed"
